@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DreaMoving</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:title" content="DreaMoving" />
+    <meta property="og:description" content="Project page for DreaMoving." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DreaMoving" />
+    <meta name="twitter:description" content="Project page for DreaMoving." />
+    <meta name="twitter:image" content="" />
+
+
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container" id="main" style="width: 90%;">
+    <!-- <div class="container" id="main"> -->
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>DreaMoving</b>: A Controllable Human Dance Video Generation Framework<br>based on Diffusion Models</br>
+                <small>
+                    Technical Report
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <!-- <a href="">
+                            DreaMoving Team
+                        </a> -->
+                        <a href="">Mengyang Feng</a>,
+                        <a href="">Jinlin Liu</a>,
+                        <a href="">Kai Yu</a>,
+                        <a href="">Yuan Yao</a>,
+                        <a href="">Zheng Hui</a>,
+                        <a href="">Xiefan Guo</a>,
+                        <a href="">Miaomiao Cui</a>,
+                        <a href="">Peiran Ren</a>,
+                        <a href="">Xuansong Xie</a>
+                        <!-- <p>Mengyang Feng, Jinlin Liu, Kai Yu, Yuan Yao, Zheng Hui, Xiefan Guo, Miaomiao Cui, Peiran Ren, Xuansong Xie<br>Alibaba Group</p> -->
+                        <br><p>Alibaba Group</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">             
+                <table border="0" cellspacing="0" cellpadding="0" align="center" width="60%">
+                    <tr>
+                        <td align="center" valign="middle" width="20%">
+                            <a href="" style="text-decoration: none;">
+                                <image src="assets/paper_image.jpg" height="60px" style="margin: 0px 0px 10px 0px;">
+                                <p>Paper</p>
+                            </a>
+                        </td>
+                        <td align="center" valign="middle" width="20%">
+                            <a href="" style="text-decoration: none;">
+                                <image src="assets/youtube_icon.png" height="60px" style="margin: 0px 0px 10px 0px;">
+                                <p>Video</p>
+                            </a>
+                        </td>
+                        <td align="center" valign="middle" width="20%">
+                            <a href="" style="text-decoration: none;">
+                                <image src="assets/modelscope.png" height="60px" style="margin: 0px 0px 10px 0px;">
+                                <p>ModelScope</p>
+                            </a>
+                        </td>
+                        <td align="center" valign="middle" width="20%">
+                            <a href="" style="text-decoration: none;">
+                                <image src="assets/github.png" height="60px" style="margin: 0px 0px 10px 0px;">
+                                <p>Code</p>
+                            </a>
+                        </td>
+                        <td align="center" valign="middle" width="20%">
+                            <a href="" style="text-decoration: none;">
+                                <image src="assets/database_icon.png" height="60px" style="margin: 0px 0px 10px 0px;">
+                                <p>Dataset</p>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <br>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">              
+                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <!-- <td align="center" valign="middle">
+                            <image width=250px src="assets/videos/case_0/0.jpeg"><br>
+                        </td> -->
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/videos/case_0/1.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/videos/case_0/1.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/videos/case_0/2.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/videos/case_0/3.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/videos/case_0/3.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <image width="75%" src="assets/pipeline.png" class="img-responsive" alt="overview" style="margin:auto"><br>
+                <p class="text-justify">
+pipeline
+                </p>
+            </div>
+        </div> -->
+
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <p class="text-justify">
+                    We train
+                </p>                
+                <br>
+                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="center" valign="middle">
+                            <video id="v0" width="99%" autoplay loop muted controls>
+                                <source src="assets/.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+
+
+<!-- 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src=".mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+         -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+            <textarea id="bibtex" class="form-control" readonly>
+@article{feng2023dreamoving,
+    title={DreaMoving: A Controllable Human Dance Video Generation Framework based on Diffusion Models},
+    author={Mengyang Feng, Jinlin Liu, Kai Yu, Yuan Yao, Zheng Hui, Xiefan Guo, Miaomiao Cui, Peiran Ren, Xuansong Xie},
+    journal={arXiv},
+    year={2023}
+}</textarea>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="https://jonbarron.info/mipnerf/">Mip-NeRF</a>.
+                </p>
+            </div>
+        </div>
+
+    </div>  
+    <br><br><br>
+</body>
+</html>
